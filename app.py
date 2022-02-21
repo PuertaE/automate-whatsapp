@@ -32,7 +32,7 @@ def reply():
             res["reply"] += '\n' + (
                 "You can contact us through phone or e-mail.\n\n*Phone*: 991234 56789 \n*E-mail* : contact@theredvelvet.io")
         elif option == 2:
-            res["reply"] += '\n' + ("You have entered *ordering mode*.")
+           # res["reply"] += '\n' + ("You have entered *ordering mode*.")
             users.update_one(
                 {"number": number}, {"$set": {"status": "ordering"}})
             res["reply"] += '\n' + (
